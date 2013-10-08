@@ -432,7 +432,7 @@ if [ ! -d /home/user/MyDocs/.weaponize/scripts/wapiti ];
  then
    echo "[I]Downloading wapiti..[I]";
    mkdir /home/user/MyDocs/.weaponize/scripts/wapiti;
-   svn co http://wapiti.svn.sourceforge.net/svnroot/wapiti /home/user/MyDocs/.weaponize/scripts/wapiti;
+   svn co http://svn.code.sf.net/p/wapiti/code/trunk /home/user/MyDocs/.weaponize/scripts/wapiti;
    if [ $? -ne 0 ];
     then 
       echo "[!]There was a problem downloading wapiti..[!]";
@@ -865,7 +865,7 @@ fi
 if [ ! -d /home/user/MyDocs/.weaponize/SET/ ];
  then
    echo "[I]Downloading Social Engineering toolkit..";
-   svn co http://svn.secmaniac.com/social_engineering_toolkit /home/user/MyDocs/.weaponize/SET/;
+   git clone https://github.com/trustedsec/social-engineer-toolkit/ /home/user/MyDocs/.weaponize/SET/;
    if [ $? -ne 0 ];
     then
       echo "[!]There was a problem downloading the SET toolkit![!]";
